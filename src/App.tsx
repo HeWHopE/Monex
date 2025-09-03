@@ -3,14 +3,25 @@ const App = () => {
   // We'll use this state variable later if we need to add interactivity
 
   return (
-    <div className="flex items-center justify-center w-screen p-4 flex-col ">
+    <div className="flex items-center h-screen justify-center w-screen  flex-col ">
+      <div
+        className="absolute left-0 top-0 w-1/2 h-full bg-cover bg-center"
+        style={{ backgroundImage: "url('/bg.webp')" }}
+      ></div>
+
+      {/* Right Image */}
+      <div
+        className="absolute right-0 top-0 w-1/2 h-full bg-cover bg-center"
+        style={{ backgroundImage: "url('/bg.webp')" }}
+      ></div>
+
       {/* Main Container */}
-      <div className="w-full max-w-sm mx-auto font-main py-7 px-2 bg-red-800 rounded-2xl overflow-hidden shadow-2xl md:min-w-[27rem] pb-4">
+      <div className="w-full z-99  max-w-sm mx-auto font-main py-7 px-2 bg-red-800 rounded-2xl overflow-hidden shadow-2xl md:min-w-[27rem] pb-4">
         {/* Header Section */}
         <div className="flex flex-col items-center justify-center py-4 text-white text-center">
           {/* Placeholder for Logo */}
           <div className="w-20 h-20 rounded-full flex items-center justify-center mb-4">
-            <img src="coin.png" />
+            <img src="coin.webp" />
           </div>
           <h1 className="!text-[20px] font-bold mb-1">ПЕРЕХІД У ТЕЛЕГРАМ</h1>
           <p className="text-sm text-black font-medium">
@@ -98,7 +109,7 @@ const App = () => {
         </div>
       </div>
       {/* Button Section */}
-      <div className="p-4">
+      <div className="p-4 z-99">
         <button className="w-full md:min-w-[27rem] text-white py-4 rounded-xl text-sm font-bold shadow-lg hover:bg-cyan-600 transition-colors  !bg-cyan-600">
           ПЕРЕЙТИ У ТЕЛЕГРАМ
         </button>
