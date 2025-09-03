@@ -188,7 +188,7 @@ const App = () => {
       </div>
       {/* Button Section */}
       <div className="z-10 flex flex-col items-center py-5">
-        <button className="  relative !min-w-[100%] xs:!min-w-[24rem]     lg:!min-w-[27rem] flex items-center justify-center gap-3 text-white !py-4 px-6 rounded-xl text-sm font-bold shadow-lg !bg-[#02B5E2] !hover:bg-cyan-100 transition-colors">
+        <button className="  relative !min-w-[100%] xs:!min-w-[24rem]  md:!min-w-[27rem] flex items-center justify-center gap-3 text-white !py-4 px-6 rounded-xl text-sm font-bold shadow-lg !bg-[#02B5E2] !hover:bg-cyan-100 transition-colors">
           {/* SVG at the start */}
           <span className="absolute left-4 flex items-center">
             <svg
