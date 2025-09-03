@@ -1,6 +1,45 @@
+import { useEffect } from "react";
+declare global {
+  interface Window {
+    fbq?: (...args: any[]) => void;
+    _fbq?: any;
+  }
+}
+const PIXEL_ID = "1638502973785350";
+
 // Main App component
 const App = () => {
-  // We'll use this state variable later if we need to add interactivity
+  useEffect(() => {
+    // Inject FB Pixel script
+    if (!window.fbq) {
+      console.log("FB Pixel not found, injecting script...");
+
+      const fbScript = document.createElement("script");
+      fbScript.async = true;
+      fbScript.src = "https://connect.facebook.net/en_US/fbevents.js";
+      fbScript.onload = () => {
+        console.log("FB Pixel script loaded.");
+        // Initialize fbq after script has loaded
+        if (window.fbq) {
+          window.fbq("init", PIXEL_ID);
+          window.fbq("track", "PageView");
+          console.log("FB Pixel initialized and page view tracked.");
+        }
+      };
+      document.head.appendChild(fbScript);
+
+      // Temporary fbq function in case someone calls it before script loads
+      window.fbq = function (...args: any[]) {
+        (window.fbq as any).queue = (window.fbq as any).queue || [];
+        (window.fbq as any).queue.push(args);
+        console.log("FB Pixel called before script loaded:", args);
+      };
+      (window.fbq as any).loaded = true;
+      (window.fbq as any).version = "2.0";
+    } else {
+      console.log("FB Pixel already initialized.");
+    }
+  }, []);
 
   return (
     <div className="flex items-center h-screen justify-center w-screen  flex-col ">
