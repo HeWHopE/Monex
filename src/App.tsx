@@ -16,21 +16,23 @@ const App = () => {
       ></div>
 
       {/* Main Container */}
-      <div className="w-full z-99  max-w-sm mx-auto font-main py-1 lg:py-7 px-2 bg-red-800 rounded-2xl overflow-hidden shadow-2xl md:min-w-[27rem] pb-4 md:h-min-[10px]">
+      <div className="w-full z-99  max-w-sm mx-auto font-main py-0 lg:py-7 px-2 bg-red-800 rounded-2xl overflow-hidden shadow-2xl md:min-w-[27rem] pb-4 md:h-min-[10px]">
         {/* Header Section */}
-        <div className="flex flex-col items-center justify-center py-4 text-white text-center">
+        <div className="flex flex-col items-center justify-center py-2 md:py-4 text-white text-center ">
           {/* Placeholder for Logo */}
           <div className="w-20 h-20 rounded-full flex items-center justify-center mb-4">
             <img src="coin.webp" />
           </div>
-          <h1 className="!text-[20px] font-bold mb-1">ПЕРЕХІД У ТЕЛЕГРАМ</h1>
+          <h1 className="md:!text-[20px] font-bold mb-1 !text-[15px]">
+            ПЕРЕХІД У ТЕЛЕГРАМ
+          </h1>
           <p className="text-sm  opacity-75 font-medium">
             MONEX — Швидко, Анонімно, Надійно
           </p>
         </div>
 
         {/* Content Cards Section */}
-        <div className="p-4 space-y-4">
+        <div className="px-4 py-0 space-y-4 sm:py-4">
           {/* Card 1 */}
           <div className=" text-white rounded-md p-2 flex items-center space-x-4 border border-white">
             <svg
