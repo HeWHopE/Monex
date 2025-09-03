@@ -3,11 +3,11 @@ const App = () => {
   // We'll use this state variable later if we need to add interactivity
 
   return (
-    <div className="flex items-center justify-center w-screen p-4">
+    <div className="flex items-center justify-center w-screen p-4 flex-col">
       {/* Main Container */}
-      <div className="w-full max-w-sm mx-auto bg-red-800 rounded-2xl overflow-hidden shadow-2xl md:min-w-[30rem]">
+      <div className="w-full max-w-sm mx-auto px-2 bg-red-800 rounded-2xl overflow-hidden shadow-2xl md:min-w-[26rem] pb-4">
         {/* Header Section */}
-        <div className="flex flex-col items-center justify-center pt-8 pb-6 text-white text-center">
+        <div className="flex flex-col items-center justify-center py-4 text-white text-center">
           {/* Placeholder for Logo */}
           <div className="bg-gray-400 w-20 h-20 rounded-full flex items-center justify-center border-2 border-white mb-4">
             <svg
@@ -28,7 +28,7 @@ const App = () => {
         {/* Content Cards Section */}
         <div className="p-4 space-y-4">
           {/* Card 1 */}
-          <div className="bg-red-700/50 text-white rounded-lg p-4 flex items-center space-x-4 border border-white">
+          <div className=" text-white rounded-lg p-2 flex items-center space-x-4 border border-white">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               className="h-6 w-6"
@@ -44,7 +44,7 @@ const App = () => {
           </div>
 
           {/* Card 2 */}
-          <div className="bg-red-700/50 text-white rounded-lg p-4 flex items-center space-x-4 border border-white">
+          <div className=" text-white rounded-lg p-2 flex items-center space-x-4 border border-white">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               className="h-6 w-6"
@@ -64,7 +64,7 @@ const App = () => {
           </div>
 
           {/* Card 3 */}
-          <div className="bg-red-700/50 text-white rounded-lg p-4 flex items-center space-x-4 border border-white">
+          <div className=" text-white rounded-lg p-2 flex items-center space-x-4 border border-white">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               className="h-6 w-6"
@@ -84,7 +84,7 @@ const App = () => {
           </div>
 
           {/* Card 4 */}
-          <div className="bg-red-700/50 text-white rounded-lg p-4 flex items-center space-x-4 border">
+          <div className=" text-white rounded-lg p-2 flex items-center space-x-4 border ">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               className="h-6 w-6"
@@ -101,16 +101,15 @@ const App = () => {
             </div>
           </div>
         </div>
-
-        {/* Button Section */}
-        <div className="p-4">
-          <button className="w-full  text-white py-4 rounded-xl text-lg font-bold shadow-lg hover:bg-cyan-600 transition-colors  !bg-cyan-600">
-            ПЕРЕЙТИ У ТЕЛЕГРАМ
-          </button>
-          <p className="text-center text-sm text-gray-400 mt-2">
-            Натисніть, щоб відкрити застосунок або веб-версію.
-          </p>
-        </div>
+      </div>
+      {/* Button Section */}
+      <div className="p-4">
+        <button className="w-full  text-white py-4 rounded-xl text-lg font-bold shadow-lg hover:bg-cyan-600 transition-colors  !bg-cyan-600">
+          ПЕРЕЙТИ У ТЕЛЕГРАМ
+        </button>
+        <p className="text-center text-sm text-black mt-2">
+          Натисніть, щоб відкрити застосунок або веб-версію.
+        </p>
       </div>
     </div>
   );
