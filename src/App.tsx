@@ -16,7 +16,7 @@ const App = () => {
       ></div>
 
       {/* Main Container */}
-      <div className="w-full z-99  max-w-sm mx-auto font-main py-7 px-2 bg-red-800 rounded-2xl overflow-hidden shadow-2xl md:min-w-[27rem] pb-4">
+      <div className="w-full z-99  max-w-sm mx-auto font-main py-1 lg:py-7 px-2 bg-red-800 rounded-2xl overflow-hidden shadow-2xl md:min-w-[27rem] pb-4 md:h-min-[10px]">
         {/* Header Section */}
         <div className="flex flex-col items-center justify-center py-4 text-white text-center">
           {/* Placeholder for Logo */}
@@ -24,7 +24,7 @@ const App = () => {
             <img src="coin.webp" />
           </div>
           <h1 className="!text-[20px] font-bold mb-1">ПЕРЕХІД У ТЕЛЕГРАМ</h1>
-          <p className="text-sm text-black font-medium">
+          <p className="text-sm  opacity-75 font-medium">
             MONEX — Швидко, Анонімно, Надійно
           </p>
         </div>
@@ -34,13 +34,40 @@ const App = () => {
           {/* Card 1 */}
           <div className=" text-white rounded-md p-2 flex items-center space-x-4 border border-white">
             <svg
+              width="36"
+              height="35"
+              viewBox="0 0 36 35"
+              fill="none"
               xmlns="http://www.w3.org/2000/svg"
-              className="h-6 w-6"
-              viewBox="0 0 24 24"
-              fill="currentColor"
             >
-              <path d="M15 15c0-1.1-.9-2-2-2h-2c-.55 0-1-.45-1-1V9c0-.55-.45-1-1-1H7c-.55 0-1 .45-1 1v3c0 .55-.45 1-1 1h-1c-.55 0-1 .45-1 1s.45 1 1 1h1c.55 0 1 .45 1 1v1c0 .55.45 1 1 1h1c.55 0 1-.45 1-1v-1c0-.55.45-1 1-1h2c1.1 0 2 .9 2 2v2c0 1.1-.9 2-2 2h-2c-.55 0-1 .45-1 1s.45 1 1 1h2c1.1 0 2-.9 2-2V15zM21 9c0 1.1-.9 2-2 2h-2c-.55 0-1 .45-1 1v1c0 .55.45 1 1 1h2c1.1 0 2-.9 2-2V9zM15 9c0 1.1-.9 2-2 2h-2c-.55 0-1 .45-1 1v1c0 .55.45 1 1 1h2c1.1 0 2-.9 2-2V9zM9 9c0 1.1-.9 2-2 2h-2c-.55 0-1 .45-1 1v1c0 .55.45 1 1 1h2c1.1 0 2-.9 2-2V9zM3 9c0 1.1-.9 2-2 2h-2c-.55 0-1 .45-1 1v1c0 .55.45 1 1 1h2c1.1 0 2-.9 2-2V9z" />
+              <path
+                d="M12.2668 4.375H23.9335V13.125H12.2668V4.375Z"
+                stroke="white"
+                stroke-width="2"
+                stroke-linejoin="bevel"
+              />
+              <path
+                d="M12.2668 21.875H23.9335V30.625H12.2668V21.875Z"
+                stroke="white"
+                stroke-width="2"
+                stroke-linejoin="bevel"
+              />
+              <path
+                d="M9.35002 13.125L6.43335 17.5L9.35002 21.875"
+                stroke="white"
+                stroke-width="2"
+                stroke-linecap="square"
+                stroke-linejoin="round"
+              />
+              <path
+                d="M26.8501 13.125L29.7668 17.5L26.8501 21.875"
+                stroke="white"
+                stroke-width="2"
+                stroke-linecap="square"
+                stroke-linejoin="round"
+              />
             </svg>
+
             <div className="flex-1">
               <p className="text-sm font-semibold">Кеш ⇄ USDT</p>
               <p className="text-[12px] opacity-75">
@@ -52,13 +79,31 @@ const App = () => {
           {/* Card 2 */}
           <div className=" text-white rounded-md p-2 flex items-center space-x-4 border border-white">
             <svg
+              width="36"
+              height="35"
+              viewBox="0 0 36 35"
+              fill="none"
               xmlns="http://www.w3.org/2000/svg"
-              className="h-6 w-6"
-              viewBox="0 0 24 24"
-              fill="currentColor"
             >
-              <path d="M21 17H3c-1.1 0-2 .9-2 2v2c0 1.1.9 2 2 2h18c1.1 0 2-.9 2-2v-2c0-1.1-.9-2-2-2zM21 11H3c-1.1 0-2 .9-2 2v2c0 1.1.9 2 2 2h18c1.1 0 2-.9 2-2v-2c0-1.1-.9-2-2-2zM21 5H3c-1.1 0-2 .9-2 2v2c0 1.1.9 2 2 2h18c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2z" />
+              <path
+                d="M28.3085 5.83333H7.89185C5.4756 5.83333 3.51685 7.79209 3.51685 10.2083V21.875C3.51685 24.2912 5.4756 26.25 7.89185 26.25H28.3085C30.7248 26.25 32.6835 24.2912 32.6835 21.875V10.2083C32.6835 7.79209 30.7248 5.83333 28.3085 5.83333Z"
+                stroke="white"
+                stroke-width="2"
+              />
+              <path
+                d="M3.51685 14.5833H32.6835"
+                stroke="white"
+                stroke-width="2"
+                stroke-linecap="round"
+              />
+              <path
+                d="M22.4751 20.4167H26.8501"
+                stroke="white"
+                stroke-width="2"
+                stroke-linecap="square"
+              />
             </svg>
+
             <div className="flex-1">
               <p className="text-sm font-semibold">
                 Готівка/Безготівка • Україна ⇄ світ
@@ -72,13 +117,26 @@ const App = () => {
           {/* Card 3 */}
           <div className=" text-white rounded-md p-2 flex items-center space-x-4 border border-white">
             <svg
+              width="36"
+              height="35"
+              viewBox="0 0 36 35"
+              fill="none"
               xmlns="http://www.w3.org/2000/svg"
-              className="h-6 w-6"
-              viewBox="0 0 24 24"
-              fill="currentColor"
             >
-              <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 13h2v2h-2v-2zm0-8h2v6h-2V7z" />
+              <path
+                d="M21.0167 4.375L31.225 14.5833L21.0167 24.7917L10.8083 14.5833L21.0167 4.375Z"
+                stroke="white"
+                stroke-width="2"
+                stroke-linejoin="round"
+              />
+              <path
+                d="M4.9751 30.625L15.1834 20.4167"
+                stroke="white"
+                stroke-width="2"
+                stroke-linecap="round"
+              />
             </svg>
+
             <div className="flex-1">
               <p className="text-sm font-semibold">
                 «Окраска» білого $У «синій»
@@ -92,13 +150,33 @@ const App = () => {
           {/* Card 4 */}
           <div className=" text-white rounded-md p-2 flex items-center space-x-4 border ">
             <svg
+              width="36"
+              height="35"
+              viewBox="0 0 36 35"
+              fill="none"
               xmlns="http://www.w3.org/2000/svg"
-              className="h-6 w-6"
-              viewBox="0 0 24 24"
-              fill="currentColor"
             >
-              <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 13h2v2h-2v-2zm0-8h2v6h-2V7z" />
+              <path
+                d="M12.2668 11.6667C12.2668 10.1196 12.8814 8.63583 13.9754 7.54187C15.0694 6.44791 16.5531 5.83333 18.1002 5.83333C19.6473 5.83333 21.131 6.44791 22.225 7.54187C23.3189 8.63583 23.9335 10.1196 23.9335 11.6667C23.9335 13.2138 23.3189 14.6975 22.225 15.7915C21.131 16.8854 19.6473 17.5 18.1002 17.5C16.5531 17.5 15.0694 16.8854 13.9754 15.7915C12.8814 14.6975 12.2668 13.2138 12.2668 11.6667Z"
+                stroke="white"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+              <path
+                d="M3.51685 29.1667L12.2668 20.4167"
+                stroke="white"
+                stroke-width="2"
+                stroke-linecap="round"
+              />
+              <path
+                d="M32.6833 29.1667L23.9333 20.4167"
+                stroke="white"
+                stroke-width="2"
+                stroke-linecap="round"
+              />
             </svg>
+
             <div className="flex-1">
               <p className="text-sm font-semibold">P2P послуги</p>
               <p className="text-[12px] opacity-75">
@@ -109,11 +187,41 @@ const App = () => {
         </div>
       </div>
       {/* Button Section */}
-      <div className="p-4 z-99">
-        <button className="w-full md:min-w-[27rem] text-white py-4 rounded-xl text-sm font-bold shadow-lg hover:bg-cyan-600 transition-colors  !bg-cyan-600">
-          ПЕРЕЙТИ У ТЕЛЕГРАМ
+      <div className="z-10 flex flex-col items-center py-5">
+        <button className="  relative !min-w-[20rem] sm:!min-w-[25rem]   lg:!min-w-[27rem] flex items-center justify-center gap-3 text-white !py-4 px-6 rounded-xl text-sm font-bold shadow-lg !bg-[#02B5E2] !hover:bg-cyan-100 transition-colors">
+          {/* SVG at the start */}
+          <span className="absolute left-4 flex items-center">
+            <svg
+              width="30"
+              height="30"
+              viewBox="0 0 35 35"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M32.0834 2.91666L16.0417 18.9583"
+                stroke="white"
+                strokeWidth="2"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+              />
+              <path
+                d="M32.0834 2.91666L21.8751 32.0833L16.0417 18.9583L2.91675 13.125L32.0834 2.91666Z"
+                stroke="white"
+                strokeWidth="2"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+              />
+            </svg>
+          </span>
+          {/* Button text */}
+          <span className="text-sm font-bold font-main">
+            ПЕРЕЙТИ У ТЕЛЕГРАМ
+          </span>
         </button>
-        <p className="text-center text-sm text-black mt-2">
+
+        {/* Bottom paragraph */}
+        <p className="text-center text-sm text-black mt-2 ">
           Натисніть, щоб відкрити застосунок або веб-версію.
         </p>
       </div>
