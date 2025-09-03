@@ -1,14 +1,11 @@
-import { useState } from "react";
-
 // Main App component
 const App = () => {
   // We'll use this state variable later if we need to add interactivity
-  const [count, setCount] = useState(0);
 
   return (
     <div className="flex items-center justify-center w-screen p-4">
       {/* Main Container */}
-      <div className="w-full max-w-sm mx-auto bg-red-800 rounded-2xl overflow-hidden shadow-2xl">
+      <div className="w-full max-w-sm mx-auto bg-red-800 rounded-2xl overflow-hidden shadow-2xl md:min-w-[30rem]">
         {/* Header Section */}
         <div className="flex flex-col items-center justify-center pt-8 pb-6 text-white text-center">
           {/* Placeholder for Logo */}
@@ -22,8 +19,8 @@ const App = () => {
               <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zm-1-13v2.5c0 .28-.22.5-.5.5h-1c-.28 0-.5-.22-.5-.5V7c0-.55-.45-1-1-1h-2c-.55 0-1 .45-1 1v1.5c0 .28-.22.5-.5.5h-1c-.28 0-.5-.22-.5-.5V7c0-1.65 1.35-3 3-3h2c1.65 0 3 1.35 3 3v2.5c0 .28-.22.5-.5.5h-1c-.28 0-.5-.22-.5-.5V8.5c0-.28-.22-.5-.5-.5h-1c-.28 0-.5-.22-.5-.5V7h-1v1.5c0 .28-.22.5-.5.5h-1c-.28 0-.5-.22-.5-.5V7c0-.55-.45-1-1-1h-2c-.55 0-1 .45-1 1v1.5c0 .28-.22.5-.5.5h-1c-.28 0-.5-.22-.5-.5V7c0-1.65 1.35-3 3-3h2c1.65 0 3 1.35 3 3v2.5c0 .28-.22.5-.5.5h-1c-.28 0-.5-.22-.5-.5V7h-1v1.5c0 .28-.22.5-.5.5h-1c-.28 0-.5-.22-.5-.5V7c0-.55-.45-1-1-1h-2c-.55 0-1 .45-1 1v1.5c0 .28-.22.5-.5.5h-1c-.28 0-.5-.22-.5-.5V7c0-1.65 1.35-3 3-3h2c1.65 0 3 1.35 3 3v2.5c0 .28-.22.5-.5.5h-1c-.28 0-.5-.22-.5-.5V7h-1z" />
             </svg>
           </div>
-          <h1 className="text-2xl font-bold mb-1">ПЕРЕХІД У ТЕЛЕГРАМ</h1>
-          <p className="text-sm font-medium">
+          <h1 className="!text-lg font-bold mb-1">ПЕРЕХІД У ТЕЛЕГРАМ</h1>
+          <p className="text-sm text-black font-medium">
             MONEX — Швидко, Анонімно, Надійно
           </p>
         </div>
