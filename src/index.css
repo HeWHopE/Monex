@@ -10,7 +10,7 @@
 
 @theme {
   --font-main: "MyFont", sans-serif;
-  !min-w-[20rem] 
+  --breakpoint-xs: 25rem;
 }
 
 :root {
