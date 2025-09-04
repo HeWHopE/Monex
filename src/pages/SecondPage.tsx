@@ -1,4 +1,5 @@
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
+import { useLocation } from "react-router-dom";
 declare global {
   interface Window {
     fbq?: (...args: any[]) => void;
@@ -7,24 +8,26 @@ declare global {
 }
 const PIXEL_ID = "1638502973785350";
 const TELEGRAM_LINKS: Record<string, string> = {
-  "покраска-доллар": "https://t.me/+npFlOS8a1N4yMTdi",
-  "покраска-доллар-1": "https://t.me/+BwUS5hyeAQ43MjQy",
-  "юсдт-кеш": "https://t.me/+AiYoGSQ9SgoyMzhi",
+  "paint-dollar": "https://t.me/+npFlOS8a1N4yMTdi",
+  "paint-dollar-1": "https://t.me/+BwUS5hyeAQ43MjQy",
+  "usdt-cash": "https://t.me/+AiYoGSQ9SgoyMzhi",
 };
 
 // Main App component
 const SecondPage = () => {
+  const [link, setLink] = useState<string>("");
+  const location = useLocation();
+  console.log(link);
   useEffect(() => {
-    // Get the last part of the URL path
-    const path = window.location.pathname.replace(/^\/+/, ""); // removes leading slash
-    console.log("URL path keyword:", path);
+    const segments = location.pathname.split("/").filter(Boolean);
+    const keyword = segments[segments.length - 1]; // last part of URL
 
-    // Match path to Telegram link
-    const telegramLink = TELEGRAM_LINKS[path];
+    const telegramLink = TELEGRAM_LINKS[keyword];
 
     if (telegramLink) {
-      console.log("Redirecting to:", telegramLink);
-      window.location.href = telegramLink; // Redirect user
+      setLink(telegramLink);
+    } else {
+      setLink("https://t.me/+AiYoGSQ9SgoyMzhi");
     }
   }, []);
 
@@ -80,7 +83,7 @@ const SecondPage = () => {
         <div className="flex flex-col items-center justify-center py-2 md:py-4 text-white text-center ">
           {/* Placeholder for Logo */}
           <div className="w-20 h-20 rounded-full flex items-center justify-center mb-4">
-            <img src="coin.webp" />
+            <img src="/coin.webp" />
           </div>
           <h1 className="md:!text-[20px] font-bold mb-1 !text-[15px]">
             ПЕРЕХІД У ТЕЛЕГРАМ
@@ -250,9 +253,7 @@ const SecondPage = () => {
       {/* Button Section */}
       <div className="z-10 flex flex-col items-center py-5">
         <button
-          onClick={() =>
-            window.open("https://t.me/+AiYoGSQ9SgoyMzhi", "_blank")
-          }
+          onClick={() => window.open(link, "_blank")}
           className="  relative !min-w-[100%] xs:!min-w-[24rem]  md:!min-w-[27rem] flex items-center justify-center gap-3 text-white !py-4 px-6 rounded-xl text-sm font-bold shadow-lg !bg-[#02B5E2] !hover:bg-cyan-100 transition-colors"
         >
           {/* SVG at the start */}

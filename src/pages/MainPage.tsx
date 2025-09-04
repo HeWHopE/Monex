@@ -5,14 +5,20 @@ declare global {
     _fbq?: any;
   }
 }
-const PIXEL_ID = "1638502973785350";
-const TELEGRAM_LINKS: Record<string, string> = {
-  "покраска-доллар": "https://t.me/+npFlOS8a1N4yMTdi",
-  "покраска-доллар-1": "https://t.me/+BwUS5hyeAQ43MjQy",
-  "юсдт-кеш": "https://t.me/+AiYoGSQ9SgoyMzhi",
-};
 
-console.log(TELEGRAM_LINKS);
+// 1. Кеш - ЮСДТ
+// https://t.me/+IUKJi_M-sK40YTky
+
+// 2. Готівка/Безготівка
+// https://t.me/+Gnd-vZjO7VY1MTIy
+
+// 3. Окраска білого у синій
+// https://t.me/+-5ZzWUAKMi0xMTEy
+
+// 4. Р2Р послуги
+// https://t.me/+W8z2LP7MwXMzNmUy
+
+const PIXEL_ID = "1638502973785350";
 
 // Main App component
 const MainPage = () => {
@@ -67,7 +73,7 @@ const MainPage = () => {
         <div className="flex flex-col items-center justify-center py-2 md:py-4 text-white text-center ">
           {/* Placeholder for Logo */}
           <div className="w-20 h-20 rounded-full flex items-center justify-center mb-4">
-            <img src="coin.webp" />
+            <img src="/coin.webp" />
           </div>
           <h1 className="md:!text-[20px] font-bold mb-1 !text-[15px]">
             ПЕРЕХІД У ТЕЛЕГРАМ
@@ -80,7 +86,12 @@ const MainPage = () => {
         {/* Content Cards Section */}
         <div className="px-4 py-0 space-y-4 sm:py-4">
           {/* Card 1 */}
-          <div className=" text-white rounded-md p-2 flex items-center space-x-4 border border-white">
+          <div
+            className=" text-white rounded-md p-2 flex items-center space-x-4 border border-white"
+            onClick={() =>
+              window.open("https://t.me/+IUKJi_M-sK40YTky", "_blank")
+            }
+          >
             <svg
               width="36"
               height="35"
@@ -125,7 +136,12 @@ const MainPage = () => {
           </div>
 
           {/* Card 2 */}
-          <div className=" text-white rounded-md p-2 flex items-center space-x-4 border border-white">
+          <div
+            className=" text-white rounded-md p-2 flex items-center space-x-4 border border-white"
+            onClick={() =>
+              window.open("https://t.me/+Gnd-vZjO7VY1MTIy", "_blank")
+            }
+          >
             <svg
               width="36"
               height="35"
@@ -163,7 +179,12 @@ const MainPage = () => {
           </div>
 
           {/* Card 3 */}
-          <div className=" text-white rounded-md p-2 flex items-center space-x-4 border border-white">
+          <div
+            className=" text-white rounded-md p-2 flex items-center space-x-4 border border-white"
+            onClick={() =>
+              window.open("https://t.me/+-5ZzWUAKMi0xMTEy", "_blank")
+            }
+          >
             <svg
               width="36"
               height="35"
@@ -196,7 +217,12 @@ const MainPage = () => {
           </div>
 
           {/* Card 4 */}
-          <div className=" text-white rounded-md p-2 flex items-center space-x-4 border ">
+          <div
+            className=" text-white rounded-md p-2 flex items-center space-x-4 border"
+            onClick={() =>
+              window.open("https://t.me/+W8z2LP7MwXMzNmUy", "_blank")
+            }
+          >
             <svg
               width="36"
               height="35"
