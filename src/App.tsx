@@ -7,7 +7,7 @@ const App = () => {
   return (
     <Routes>
       <Route path="/" element={<MainPage />} />
-      <Route path="/one/:keyword" element={<SecondPage />} />
+      <Route path="/link/:keyword" element={<SecondPage />} />
 
       {/* Add more routes as needed */}
     </Routes>
