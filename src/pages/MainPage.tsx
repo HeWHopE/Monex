@@ -12,6 +12,8 @@ const TELEGRAM_LINKS: Record<string, string> = {
   "юсдт-кеш": "https://t.me/+AiYoGSQ9SgoyMzhi",
 };
 
+console.log(TELEGRAM_LINKS);
+
 // Main App component
 const MainPage = () => {
   useEffect(() => {
