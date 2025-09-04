@@ -87,7 +87,7 @@ const MainPage = () => {
         <div className="px-4 py-0 space-y-4 sm:py-4">
           {/* Card 1 */}
           <div
-            className=" text-white rounded-md p-2 flex items-center space-x-4 border border-white"
+            className=" text-white cursor-pointer rounded-md p-2 flex items-center space-x-4 border border-white"
             onClick={() =>
               window.open("https://t.me/+IUKJi_M-sK40YTky", "_blank")
             }
@@ -137,7 +137,7 @@ const MainPage = () => {
 
           {/* Card 2 */}
           <div
-            className=" text-white rounded-md p-2 flex items-center space-x-4 border border-white"
+            className=" text-white cursor-pointer rounded-md p-2 flex items-center space-x-4 border border-white"
             onClick={() =>
               window.open("https://t.me/+Gnd-vZjO7VY1MTIy", "_blank")
             }
@@ -180,7 +180,7 @@ const MainPage = () => {
 
           {/* Card 3 */}
           <div
-            className=" text-white rounded-md p-2 flex items-center space-x-4 border border-white"
+            className=" text-white cursor-pointer rounded-md p-2 flex items-center space-x-4 border border-white"
             onClick={() =>
               window.open("https://t.me/+-5ZzWUAKMi0xMTEy", "_blank")
             }
@@ -218,7 +218,7 @@ const MainPage = () => {
 
           {/* Card 4 */}
           <div
-            className=" text-white rounded-md p-2 flex items-center space-x-4 border"
+            className=" text-white cursor-pointer rounded-md p-2 flex items-center space-x-4 border"
             onClick={() =>
               window.open("https://t.me/+W8z2LP7MwXMzNmUy", "_blank")
             }
