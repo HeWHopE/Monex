@@ -16,7 +16,6 @@ const TELEGRAM_LINKS: Record<string, string> = {
   "p2p-vs-monex": "https://t.me/+j3OaFjtE2yA1ZWRi", // р2р vs Monex
   "hroshi-odrazu": "https://t.me/+tcm4dXruVrsyZDBi", // Гроші одразу в руках
   "100k-usdt": "https://t.me/+TM0vFFeda2UzODBi", // 100k$ з USDT
-
   "kurs-vygidnyy": "https://t.me/+GINs5NLxXFQxZmNi", // Курс який вигідний тобі
   "obmin-kripty": "https://t.me/+y_dDG64KjVdlN2Qy",
   "tut-i-zaraz": "https://t.me/+mfTh7BBzvDxhZTdi",
@@ -34,7 +33,7 @@ const SecondPage = () => {
 
     const telegramLink = TELEGRAM_LINKS[keyword];
     console.log(keyword);
-    console.log(link);
+    console.log(telegramLink);
 
     if (telegramLink) {
       setLink(telegramLink);
