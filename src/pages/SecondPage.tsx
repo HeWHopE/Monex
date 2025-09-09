@@ -16,11 +16,12 @@ const TELEGRAM_LINKS: Record<string, string> = {
   "p2p-vs-monex": "https://t.me/+j3OaFjtE2yA1ZWRi", // р2р vs Monex
   "hroshi-odrazu": "https://t.me/+tcm4dXruVrsyZDBi", // Гроші одразу в руках
   "100k-usdt": "https://t.me/+TM0vFFeda2UzODBi", // 100k$ з USDT
-  "usdt-cash-15min": "https://t.me/+TTN33-pRc8gwZTli", // USDT-кеш за 15хв
+
   "kurs-vygidnyy": "https://t.me/+GINs5NLxXFQxZmNi", // Курс який вигідний тобі
   "obmin-kripty": "https://t.me/+y_dDG64KjVdlN2Qy",
   "tut-i-zaraz": "https://t.me/+mfTh7BBzvDxhZTdi",
   "ugodi-uspishno": "https://t.me/+1EnZwiuU1AtiZWMy",
+  "usdt-15min": "https://t.me/+TTN33-pRc8gwZTli", // USDT-кеш за 15хв
 };
 
 // Main App component
