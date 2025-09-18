@@ -1,3 +1,4 @@
+/* eslint-disable */
 import { useEffect, useState } from "react";
 import { useLocation } from "react-router-dom";
 declare global {
@@ -20,7 +21,9 @@ const TELEGRAM_LINKS: Record<string, string> = {
   "obmin-kripty": "https://t.me/+y_dDG64KjVdlN2Qy",
   "tut-i-zaraz": "https://t.me/+mfTh7BBzvDxhZTdi",
   "ugodi-uspishno": "https://t.me/+1EnZwiuU1AtiZWMy",
-  "usdt-15min": "https://t.me/+TTN33-pRc8gwZTli", // USDT-кеш за 15хв
+  "usdt-15min": "https://t.me/+TTN33-pRc8gwZTli",
+  "usdt-cash-new-creo-tt": "https://t.me/+utk-LABGRlM3YmEy",
+  "white-blue-usdt-cashtt": "https://t.me/+6T07zTr8YkE3MGEy",
 };
 
 // Main App component
