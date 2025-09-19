@@ -26,7 +26,6 @@ const TELEGRAM_LINKS: Record<string, string> = {
   "white-blue-usdt-cashtt": "https://t.me/+6T07zTr8YkE3MGEy",
 };
 
-// Main App component
 const SecondPage = () => {
   const [link, setLink] = useState<string>("");
   const location = useLocation();

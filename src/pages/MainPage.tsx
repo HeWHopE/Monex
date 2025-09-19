@@ -195,12 +195,7 @@ const MainPage = () => {
         {/* Content Cards Section */}
         <div className="px-4 py-0 space-y-4 sm:py-4">
           {/* Card 1 */}
-          <div
-            className=" text-white cursor-pointer rounded-md p-2 flex items-center space-x-1 md:space-x-3 border border-white"
-            onClick={() =>
-              window.open("https://t.me/+IUKJi_M-sK40YTky", "_blank")
-            }
-          >
+          <div className=" text-white cursor-pointer rounded-md p-2 flex items-center space-x-1 md:space-x-3 border border-white">
             {FirstIcon}
             <div className="flex flex-row justify-between w-full">
               <div>
@@ -211,17 +206,19 @@ const MainPage = () => {
                   Швидкий обмін у дві сторони.
                 </p>
               </div>
-              {RightIcon}
+
+              <button
+                onClick={() =>
+                  window.open("https://t.me/+IUKJi_M-sK40YTky", "_blank")
+                }
+              >
+                {RightIcon}
+              </button>
             </div>
           </div>
 
           {/* Card 2 */}
-          <div
-            className=" text-white cursor-pointer rounded-md p-2 flex items-center space-x-1 md:space-x-3  border border-white"
-            onClick={() =>
-              window.open("https://t.me/+Gnd-vZjO7VY1MTIy", "_blank")
-            }
-          >
+          <div className=" text-white cursor-pointer rounded-md p-2 flex items-center space-x-1 md:space-x-3  border border-white">
             {SecondICon}
 
             <div className="flex flex-row justify-between w-full">
@@ -233,17 +230,18 @@ const MainPage = () => {
                   Перестановки в межах країни і світу.
                 </p>
               </div>
-              {RightIcon}
+              <button
+                onClick={() =>
+                  window.open("https://t.me/+Gnd-vZjO7VY1MTIy", "_blank")
+                }
+              >
+                {RightIcon}
+              </button>
             </div>
           </div>
 
           {/* Card 3 */}
-          <div
-            className=" text-white cursor-pointer rounded-md p-2 flex items-center space-x-1 md:space-x-3 border border-white"
-            onClick={() =>
-              window.open("https://t.me/+-5ZzWUAKMi0xMTEy", "_blank")
-            }
-          >
+          <div className=" text-white cursor-pointer rounded-md p-2 flex items-center space-x-1 md:space-x-3 border border-white">
             {ThirdIcon}
 
             <div className="flex flex-row justify-between w-full">
@@ -255,17 +253,18 @@ const MainPage = () => {
                   Перестановки в межах країни і світу.
                 </p>
               </div>
-              {RightIcon}
+              <button
+                onClick={() =>
+                  window.open("https://t.me/+-5ZzWUAKMi0xMTEy", "_blank")
+                }
+              >
+                {RightIcon}
+              </button>
             </div>
           </div>
 
           {/* Card 4 */}
-          <div
-            className=" text-white cursor-pointer rounded-md p-2 flex items-center space-x-1 md:space-x-3  border"
-            onClick={() =>
-              window.open("https://t.me/+W8z2LP7MwXMzNmUy", "_blank")
-            }
-          >
+          <div className=" text-white cursor-pointer rounded-md p-2 flex items-center space-x-1 md:space-x-3  border">
             {FourthIcon}
 
             <div className="flex flex-row gap-5 items-center justify-between w-full">
@@ -277,7 +276,13 @@ const MainPage = () => {
                   Безпечно, конфіденційно, під гарантії.
                 </p>
               </div>
-              {RightIcon}
+              <button
+                onClick={() =>
+                  window.open("https://t.me/+W8z2LP7MwXMzNmUy", "_blank")
+                }
+              >
+                {RightIcon}
+              </button>
             </div>
           </div>
         </div>
