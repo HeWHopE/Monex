@@ -211,7 +211,7 @@ const MainPage = () => {
                 onClick={() =>
                   window.open("https://t.me/+IUKJi_M-sK40YTky", "_blank")
                 }
-                className=" !p-0"
+                className=" !p-0 cursor-pointer"
               >
                 {RightIcon}
               </button>
@@ -232,7 +232,7 @@ const MainPage = () => {
                 </p>
               </div>
               <button
-                className=" !p-0"
+                className=" !p-0 cursor-pointer"
                 onClick={() =>
                   window.open("https://t.me/+Gnd-vZjO7VY1MTIy", "_blank")
                 }
@@ -256,7 +256,7 @@ const MainPage = () => {
                 </p>
               </div>
               <button
-                className=" !p-0"
+                className=" !p-0 cursor-pointer"
                 onClick={() =>
                   window.open("https://t.me/+-5ZzWUAKMi0xMTEy", "_blank")
                 }
@@ -267,7 +267,7 @@ const MainPage = () => {
           </div>
 
           {/* Card 4 */}
-          <div className=" text-white cursor-pointer rounded-md p-2 flex items-center space-x-1 md:space-x-3  border">
+          <div className=" text-white  rounded-md p-2 flex items-center space-x-1 md:space-x-3  border">
             {FourthIcon}
 
             <div className="flex flex-row gap-5 items-center justify-between w-full">
@@ -280,7 +280,7 @@ const MainPage = () => {
                 </p>
               </div>
               <button
-                className=" !p-0"
+                className=" !p-0 cursor-pointer"
                 onClick={() =>
                   window.open("https://t.me/+W8z2LP7MwXMzNmUy", "_blank")
                 }
