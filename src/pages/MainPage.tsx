@@ -211,6 +211,7 @@ const MainPage = () => {
                 onClick={() =>
                   window.open("https://t.me/+IUKJi_M-sK40YTky", "_blank")
                 }
+                className=" !p-0"
               >
                 {RightIcon}
               </button>
@@ -231,6 +232,7 @@ const MainPage = () => {
                 </p>
               </div>
               <button
+                className=" !p-0"
                 onClick={() =>
                   window.open("https://t.me/+Gnd-vZjO7VY1MTIy", "_blank")
                 }
@@ -254,6 +256,7 @@ const MainPage = () => {
                 </p>
               </div>
               <button
+                className=" !p-0"
                 onClick={() =>
                   window.open("https://t.me/+-5ZzWUAKMi0xMTEy", "_blank")
                 }
@@ -277,6 +280,7 @@ const MainPage = () => {
                 </p>
               </div>
               <button
+                className=" !p-0"
                 onClick={() =>
                   window.open("https://t.me/+W8z2LP7MwXMzNmUy", "_blank")
                 }
