@@ -24,6 +24,7 @@ const TELEGRAM_LINKS: Record<string, string> = {
   "usdt-15min": "https://t.me/+TTN33-pRc8gwZTli",
   "usdt-cash-new-creo-tt": "https://t.me/+utk-LABGRlM3YmEy",
   "white-blue-usdt-cashtt": "https://t.me/+6T07zTr8YkE3MGEy",
+  "tt-test": "https://t.me/+K0YdrTuo_zFhNTJi",
 };
 
 const SecondPage = () => {
