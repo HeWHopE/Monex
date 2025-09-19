@@ -18,7 +18,8 @@ interface TikTokAnalytics {
   setAndDefer?: (obj: any, method: string) => void;
   load?: (id: string, config?: any) => void;
   page?: () => void;
-  track?: (...args: any[]) => void;
+  track?: (eventName: string, data?: Record<string, any>) => void;
+
   identify?: (...args: any[]) => void;
   [key: string]: any;
 }

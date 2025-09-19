@@ -208,9 +208,13 @@ const MainPage = () => {
               </div>
 
               <button
-                onClick={() =>
-                  window.open("https://t.me/+IUKJi_M-sK40YTky", "_blank")
-                }
+                onClick={() => {
+                  window.ttq?.track?.("ClickButton", {
+                    buttonName: "Open Link 1",
+                  });
+
+                  window.open("https://t.me/+IUKJi_M-sK40YTky", "_blank");
+                }}
                 className=" !p-0 cursor-pointer"
               >
                 {RightIcon}
@@ -233,9 +237,12 @@ const MainPage = () => {
               </div>
               <button
                 className=" !p-0 cursor-pointer"
-                onClick={() =>
-                  window.open("https://t.me/+Gnd-vZjO7VY1MTIy", "_blank")
-                }
+                onClick={() => {
+                  window.ttq?.track?.("ClickButton", {
+                    buttonName: "Open Link 2",
+                  });
+                  window.open("https://t.me/+Gnd-vZjO7VY1MTIy", "_blank");
+                }}
               >
                 {RightIcon}
               </button>
@@ -257,9 +264,12 @@ const MainPage = () => {
               </div>
               <button
                 className=" !p-0 cursor-pointer"
-                onClick={() =>
-                  window.open("https://t.me/+-5ZzWUAKMi0xMTEy", "_blank")
-                }
+                onClick={() => {
+                  window.ttq?.track?.("ClickButton", {
+                    buttonName: "Open Link 3",
+                  });
+                  window.open("https://t.me/+-5ZzWUAKMi0xMTEy", "_blank");
+                }}
               >
                 {RightIcon}
               </button>
@@ -281,9 +291,13 @@ const MainPage = () => {
               </div>
               <button
                 className=" !p-0 cursor-pointer"
-                onClick={() =>
-                  window.open("https://t.me/+W8z2LP7MwXMzNmUy", "_blank")
-                }
+                onClick={() => {
+                  window.ttq?.track?.("ClickButton", {
+                    buttonName: "Open Link 4",
+                  });
+
+                  window.open("https://t.me/+W8z2LP7MwXMzNmUy", "_blank");
+                }}
               >
                 {RightIcon}
               </button>
