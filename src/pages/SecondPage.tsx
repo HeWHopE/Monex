@@ -1,6 +1,7 @@
 /* eslint-disable */
 import { useEffect, useState } from "react";
 import { useLocation } from "react-router-dom";
+import { useTikTokPixel } from "../tiktok";
 declare global {
   interface Window {
     fbq?: (...args: any[]) => void;
@@ -44,6 +45,7 @@ const SecondPage = () => {
       setLink("https://t.me/+AiYoGSQ9SgoyMzhi");
     }
   }, []);
+  useTikTokPixel();
 
   useEffect(() => {
     // Inject FB Pixel script
