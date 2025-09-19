@@ -195,7 +195,7 @@ const MainPage = () => {
         {/* Content Cards Section */}
         <div className="px-4 py-0 space-y-4 sm:py-4">
           {/* Card 1 */}
-          <div className=" text-white cursor-pointer rounded-md p-2 flex items-center space-x-1 md:space-x-3 border border-white">
+          <div className=" text-white  rounded-md p-2 flex items-center space-x-1 md:space-x-3 border border-white">
             {FirstIcon}
             <div className="flex flex-row justify-between w-full">
               <div>
@@ -219,7 +219,7 @@ const MainPage = () => {
           </div>
 
           {/* Card 2 */}
-          <div className=" text-white cursor-pointer rounded-md p-2 flex items-center space-x-1 md:space-x-3  border border-white">
+          <div className=" text-white  rounded-md p-2 flex items-center space-x-1 md:space-x-3  border border-white">
             {SecondICon}
 
             <div className="flex flex-row justify-between w-full">
@@ -243,7 +243,7 @@ const MainPage = () => {
           </div>
 
           {/* Card 3 */}
-          <div className=" text-white cursor-pointer rounded-md p-2 flex items-center space-x-1 md:space-x-3 border border-white">
+          <div className=" text-white  rounded-md p-2 flex items-center space-x-1 md:space-x-3 border border-white">
             {ThirdIcon}
 
             <div className="flex flex-row justify-between w-full">
